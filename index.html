@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Restaurant</title>
   </head>
@@ -14,24 +15,25 @@
             <div class="nav_right">
               <ul>
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Бронь</a></li>
-                <li><a href="#"><img src="img/cart.svg" alt=""></a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#history">О нас</a></li>
+                <li><a href="#zakaz">Бронь</a></li>
+                <li><a class="cart_line" href="#"><img src="img/cart.svg" alt=""></a></li>
               </ul>
               <div class="contacts">
                 <p class="tel"><img src="img/phone.png" alt="">+999-888-76-54</p>
                 <p>Свяжитесь с нами для
                 бронирования</p>
               </div>
-              <a class="booking" href="#">Заказ столика</a>
+              <a class="btn booking" href="#">Заказ столика</a>
             </div>
+            <div class="burger_menu"><img src="img/Group.svg" alt=""></div>
         </nav>
       <div class="welcome">
         <p>Добро пожаловать в</p>
         <p>Наш ресторан</p>
         <p>Дом лучшей еды</p>
-        <a class="welcome_btn" href="#">View menu</a>
+        <a class="btn welcome_btn" href="#menu">View menu</a>
       </div>
     </div>
   </header>
@@ -60,11 +62,11 @@
       </div>
   </section>
 
-  <section class="history">
+  <section id="history">
     <div class="container">
       <div class="history_text">
         <h2>Наша <span class="gold">История</span></h2>
-        <p>Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</p>
+        <p class="history_text_p">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</p>
         <div class="count">
           <div class="count_card">
             <p class="count_card_number gold">93</p>
@@ -83,34 +85,47 @@
       <div class="history_image"><img src="img/images.png" alt=""></div>
     </div>
   </section>
-  <section class="zakaz">
+  <section id="zakaz">
     <div class="container">
       <div class="zakaz_text">
         <h2>Отпразднуйте в одном из
           самых лучших ресторанов.</h2>
           <p>Только в этом месяце бизнес-ланч от 250 ₽</p>
       </div>
-      <a href="#" class="booking">Заказ столика</a>
+      <a href="#" class="btn booking">Заказ столика</a>
     </div>
   </section>
-  <section class="our_meals">
-    <h2>Наши <span class="gold">Блюда</span></h2>
-    <img src="img/pizza.png" alt="">
-    <div class="menu_hambugreg">
-      <div class="hamburger_card">
-        <img src="img/burger.png" alt="">
-        <span></span>
-        <p>220 ₽</p>
-      </div>
-      <div class="hamburger_card">
-        <img src="img/burger.png" alt="">
-        <span></span>
-        <p>220 ₽</p>
-      </div>
-      <div class="hamburger_card">
-        <img src="img/burger.png" alt="">
-        <span></span>
-        <p>220 ₽</p>
+  <section class="our_meals" id="menu">
+    <div class="container">
+      <h2>Наши <span class="gold">Блюда</span></h2>
+      <div class="menu_bottom">
+        <img class="pizza" src="img/pizza.png" alt="">
+        <div class="menu_hamburger">
+          <div class="hamburger_card">
+            <img src="img/burger.png" alt="">
+            <div class="hamburger_card_text">
+              <p>Гамбургер мини</p>
+              <span class="dashed"></span>
+              <p>220 ₽</p>
+            </div>
+          </div>
+          <div class="hamburger_card">
+            <img src="img/burger.png" alt="">
+            <div class="hamburger_card_text">
+              <p>Гамбургер мини</p>
+              <span class="dashed"></span>
+              <p>220 ₽</p>
+            </div>
+          </div>
+          <div class="hamburger_card">
+            <img src="img/burger.png" alt="">
+            <div class="hamburger_card_text">
+              <p>Гамбургер мини</p>
+              <span class="dashed"></span>
+              <p>220 ₽</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
